@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".DonateActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:id="@+id/textDonateCall"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_marginTop="30dp"
+           android:layout_marginRight="15dp"
+           android:drawableRight="@drawable/call"
+           android:drawablePadding="7dp"
+           android:gravity="center"
+           android:text="Sorun Bildir"
+           android:textColor="@color/kizilayRed"
+           android:textSize="16sp"/>
+
+       <ImageView
+           android:id="@+id/donateImage"
+           android:layout_width="150dp"
+           android:layout_height="200dp"
+           android:layout_below="@id/textDonateCall"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="30dp"
+           android:src="@drawable/vector" />
+
+       <EditText
+           android:layout_below="@id/donateImage"
+           android:layout_marginTop="30dp"
+           android:layout_width="match_parent"
+           android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"
+           android:layout_height="50dp"
+           android:background="@drawable/edittext_background"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/editTextName"
+           android:hint="İsim Soyisim"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           android:paddingLeft="7dp"
+           android:inputType="textPersonName"/>
+       <EditText
+           android:layout_below="@id/editTextName"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"
+           android:layout_height="50dp"
+           android:background="@drawable/edittext_background"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/editTextTC"
+           android:hint="TC Kimlik Numarası"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           android:paddingLeft="7dp"
+           android:inputType="number"/>
+       <EditText
+           android:layout_below="@id/editTextTC"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"
+           android:layout_height="50dp"
+           android:background="@drawable/edittext_background"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/editTextMail"
+           android:hint="Mail Adresi"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           android:paddingLeft="7dp"
+           android:inputType="textEmailAddress"/>
+       <EditText
+           android:layout_below="@id/editTextMail"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"
+           android:layout_height="50dp"
+           android:background="@drawable/edittext_background"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/editTextPhone"
+           android:hint="Cep Telefon Numarası*"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           android:paddingLeft="7dp"
+           android:inputType="number"/>
+
+       <EditText
+           android:id="@+id/editTextCountry"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_below="@id/editTextPhone"
+           android:layout_centerHorizontal="true"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginRight="30dp"
+           android:background="@drawable/edittext_background"
+           android:hint="Ülke*"
+           android:inputType="text"
+           android:paddingLeft="7dp"
+           android:textColor="@color/black"
+           android:textSize="16sp" />
+       <EditText
+           android:layout_below="@id/editTextCountry"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"
+           android:layout_height="50dp"
+           android:background="@drawable/edittext_background"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/editTextCity"
+           android:hint="Şehir*"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           android:paddingLeft="7dp"
+           android:inputType="text"/>
+       <EditText
+           android:layout_below="@id/editTextCity"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"
+           android:layout_height="50dp"
+           android:background="@drawable/edittext_background"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/editTextAddress"
+           android:hint="Adres*"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           android:paddingLeft="7dp"
+           android:inputType="text"/>
+       <EditText
+           android:layout_below="@id/editTextAddress"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"
+           android:layout_height="50dp"
+           android:background="@drawable/edittext_background"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/editTextPassword"
+           android:hint="Şifre*"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           android:paddingLeft="7dp"
+           android:inputType="textPassword"/>
+
+       <Button
+           android:layout_width="170dp"
+           android:layout_height="50dp"
+           android:backgroundTint="@color/kizilayRed"
+           android:text="Bağışçı Ol"
+           android:textAllCaps="false"
+           android:id="@+id/buttonDonateOK"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/editTextPassword"
+           android:layout_marginTop="30dp"
+           />
+
+
+
+
+
+
+
+   </RelativeLayout>
+
+</ScrollView>

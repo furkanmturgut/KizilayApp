@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/donorCardImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/donorcard" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/setting"
+        android:id="@+id/settingsImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kan Dostum"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/donorCardImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textFriends"/>
+    <View
+        android:layout_below="@id/textFriends"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DBD8DD"
+        android:id="@+id/viewLine"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/textFriends"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/cardBloodGroup">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/cardColor"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/person"
+                android:layout_centerVertical="true"
+                android:id="@+id/personIcon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kan Grubu"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/personIcon"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Rh (+)"
+                android:textColor="@color/kizilayRed"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:id="@+id/textBloodGroup"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/cardBloodGroup"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/cardDonateNumber">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/cardColor"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/donates"
+                android:layout_centerVertical="true"
+                android:id="@+id/bloodIcon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bağış Sayısı"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/bloodIcon"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="68"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:id="@+id/textDonateNumber"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/cardDonateNumber"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/cardDonateCalendar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/cardColor"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/clipboard"
+                android:layout_centerVertical="true"
+                android:id="@+id/calendarIcon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bağış Tarihçesi"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/calendarIcon"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/calendarNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/nexticon" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/cardDonateCalendar"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/cardBloodMeeting">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/cardColor"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/hospital"
+                android:layout_centerVertical="true"
+                android:id="@+id/hospitalIcon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/hospitalIcon"
+                android:text="Kan Randevu"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/hospitalNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/nexticon" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/cardBloodMeeting"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/cardControl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/cardColor"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/testtube"
+                android:layout_centerVertical="true"
+                android:id="@+id/controlIcon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uygunluk Kontrolü"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/controlIcon"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/nexticon"
+                android:id="@+id/controlNext"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/cardBloodMeeting"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/cardMaps">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/cardColor"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="En Yakın Kan Bağış Noktaları"
+                android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAbout"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/cardMaps"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="5dp">
+        <RelativeLayout
+            android:background="@color/cardColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bağış Hakkında"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardContact"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/cardMaps"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="5dp">
+        <RelativeLayout
+            android:background="@color/cardColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İletişim"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logos" />
+
+
+</RelativeLayout>

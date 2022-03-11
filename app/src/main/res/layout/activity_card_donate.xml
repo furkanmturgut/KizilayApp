@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardDonateActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="110dp"
+        app:cardCornerRadius="7dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/circle"
+                app:civ_border_color="@color/kizilayRed"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textCardName"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:gravity="center"
+                android:text="Furkan Mehmet Turgut"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/medalIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/bronze_medal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kan Grubu"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/donorman"
+                android:layout_below="@id/profile_image"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="7dp"
+                android:id="@+id/bloodGroup"/>
+
+            <TextView
+                android:id="@+id/textBloodCard"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_image"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:text="A Rh (+)"
+                android:gravity="right"
+                android:textColor="@color/kizilayRed"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bağış Sayısı"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/blooddrophand"
+                android:layout_below="@id/bloodGroup"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="7dp"
+                android:id="@+id/donateNumber"/>
+
+            <TextView
+                android:id="@+id/textDonateCard"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textBloodCard"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="68"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bağışlanan Ünite"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/blood_unit"
+                android:layout_below="@id/donateNumber"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="7dp"
+                android:id="@+id/unitNumber"/>
+
+            <TextView
+                android:id="@+id/textUnitCard"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textDonateCard"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="33dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Son Bağış Tarihi"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/date"
+                android:layout_below="@id/unitNumber"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="7dp"
+                android:id="@+id/dateNumber"/>
+
+            <TextView
+                android:id="@+id/textDateCard"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textUnitCard"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="33dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="01/01/2001"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lokasyon"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/map"
+                android:layout_below="@id/dateNumber"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="7dp"
+                android:id="@+id/locNumber"/>
+
+            <TextView
+                android:id="@+id/textLocCard"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textDateCard"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="33dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="Aksaray"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logos"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"/>
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

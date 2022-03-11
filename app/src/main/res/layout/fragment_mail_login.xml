@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".loginfragments.MailLoginFragment">
+
+    <EditText
+        android:id="@+id/loginMail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Mail Adres"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="7dp" />
+    <EditText
+        android:layout_below="@id/loginMail"
+        android:id="@+id/loginMailPass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="Şifre"
+        android:paddingLeft="7dp"/>
+
+    <TextView
+        android:id="@+id/textForgotPassMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginMailPass"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:text="Şifremi Unuttum"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/loginMailButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textForgotPassMail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/kizilayRed"
+        android:text="Giriş Yap"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

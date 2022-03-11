@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/vector"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginLogo"
+        android:layout_marginTop="70dp"/>
+
+   <RelativeLayout
+       android:id="@+id/relativeButtons"
+       android:gravity="center"
+       android:layout_below="@id/loginLogo"
+       android:layout_width="match_parent"
+       android:layout_height="60dp">
+
+       <Button
+           android:id="@+id/buttonTC"
+           android:layout_width="100dp"
+           android:layout_height="40dp"
+           android:layout_marginTop="20dp"
+           android:backgroundTint="@color/kizilayRed"
+           android:text="TC No"
+           android:textAllCaps="false"
+           android:textColor="@color/black" />
+
+       <Button
+           android:id="@+id/buttonMail"
+           android:layout_width="100dp"
+           android:layout_height="40dp"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="20dp"
+           android:layout_toRightOf="@id/buttonTC"
+           android:backgroundTint="@color/kizilayRed"
+           android:text="E-Posta"
+           android:textAllCaps="false"
+           android:textColor="@color/black" />
+
+       <Button
+           android:textColor="@color/black"
+           android:id="@+id/buttonPhone"
+           android:layout_width="100dp"
+           android:layout_height="40dp"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="20dp"
+           android:layout_toRightOf="@id/buttonMail"
+           android:backgroundTint="@color/kizilayRed"
+           android:text="Telefon"
+           android:textAllCaps="false" />
+   </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/relativeButtons">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yaparken Sorun Yaşıyorsanız;"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/textProblem"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/textProblemSolved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/textProblem"
+            android:paddingLeft="7dp"
+            android:text="ALO 182"
+            android:textColor="@color/kizilayRed"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
